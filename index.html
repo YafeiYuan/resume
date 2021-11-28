@@ -200,19 +200,7 @@
                                     <b>模型实现:</b>
                                     &nbsp;本项目的目标是设计轻量级实时检测模型。本人首先尝试了单个卷积神经网络（Convolutional Neural Network，CNN）直接学习，发现在大量的标签数据集上可以取得好结果，在训练数据不足的情况下 ，性能下降比较快。后来尝试采用CNN融合不同尺寸图像信息来提高模型性能，这样处理在少量标签数据上能取得很好的效果。
                                 </p>
-                            </ul>
-                            <br>
-                            <ul>
-                                <li>
-                                <h4>项目成果:</h4>
-                                </li>
-                                <p>
-                                    Liu Y, et al., A Light-Weight Deep-Learning Model with Multi-Scale Features for Steel
-                                    Surface Defect Classification[J]. Materials, 2020, 13(20): 4629. （JCR 二区，影响因子：
-                                    3.057） 
-                                </p>
-                            </ul>
-                            
+                            </ul>                          
                         </li>
                     </ul>  
                 </div>
@@ -254,17 +242,6 @@
                                 <p>
                                     <b>模型实现:</b>
                                     &nbsp;本人首先在数据集上探索不同的Resnet版本（18、35、50、101和152）的模型试验，选择了比较合适的模型（Resnet 50）。采用Resnet 50作为底层的骨架模型，直接用Resnet 50做分类误检较多。后尝试融合Resnet不同层（blocks）输出的信息，测试模型的性能。发现Resnet 50的block 2和block 3的融合能取得很好的结果，比通常使用的融合全部特征复杂度小。另外加入了迁移学习（Transfer Learning）技术。在使用过程中发现，用数据集重新训练迁移学习的权重参数信息，能够很大程度上缩小训练时间（如从1730ms降低到671ms）。此外，尝试了不同的多标签处理的Loss函数（如MSELoss 、BCEWithLogitsLoss和CrossEntropyLoss），发现BCEWithLogitsLoss在这个数据集上效果比较好。    
-                                </p>
-                            </ul>
-                            <br>
-                            <ul>
-                                <li>
-                                <h4>项目成果:</h4>
-                                </li>
-                                <p>
-                                    Liu Y, et al., Deep Learning Model for Imbalanced Multi-label Surface
-                                    Defect Classification[J]. Measurement Science and Technology, 2021. （JCR一区，影响因子：
-                                    2.046）
                                 </p>
                             </ul>
                         </li>
